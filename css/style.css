@@ -1,0 +1,291 @@
+
+/*header nav */
+.header_nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, black 20%,rgba(193, 193, 193, 0.2) 30%);
+    
+}
+
+.logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.global_nav {
+    display: flex;
+    align-items: stretch;
+}
+
+.global_nav_item {
+    display: flex;
+	color: #1A1A1A;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.global_nav_item:hover {
+    background: #1A1A1A;
+    color: #42210b;
+}
+li {
+    list-style: none;
+}
+
+/* Footer*/ 
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+footer{
+	background: #343434;
+	padding-top: 50px;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+	display: inline-box-align;
+	justify-content: center;
+}
+.footer-content{
+	width: 33.3%;
+	padding-left: 5px;
+}
+h3{
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+.footer-content p{
+	width: 190px;
+	margin: auto;
+	padding: 7px;
+}
+.footer-content ul{
+	text-align: center;
+	margin-right: 200px;
+}
+.list{
+	padding: 0;
+}
+.list li{
+	width: auto;
+	text-align: center;
+	list-style-type: none;
+	padding: 7px;
+	position: relative;
+}
+.list li::before{
+	content: '';
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 100%;
+	width: 0;
+	height: 2px;
+	background: #f18930;
+	transition-duration: .5;
+}
+.list li:hover::before{
+	width: 70px;
+}
+.social-icons{
+	text-align: center;
+	padding: 0;
+}
+.social-icons li{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+.social-icons i{
+	color: white;
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #f18930;
+}
+.social-icons i:hover{
+	color: #f18930;
+}
+.bottom-bar{
+	background: #f18930;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 50px;
+}
+.bottom-bar p{
+	color: #343434;
+	margin: 0;
+	font-size: 16px;
+	padding: 7px;
+}
+/*cartas de bootsrap*/
+.row .col-sm-6:nth-child(2n+1) .card {
+    margin-bottom: 2rem;
+}
+  
+.row .col-sm-6:nth-child(2n+1) .card-body {
+    order: 2;
+  }
+  
+  .row .col-sm-6:nth-child(2n+1) a {
+    order: 1;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	width:85%;
+	margin:100px auto;
+	justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+/*card*/
+.card{
+	width:350px;
+	margin:0px 10px;
+	background-color: #1A1A1A;
+	overflow: hidden;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+
+.card:hover{
+	transform:translateY(-10px);
+}
+
+.card img{
+	width:100%;
+	height: auto;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.card-body{
+	padding:20px;
+}
+
+.card-title h5{
+	font-size: 28px;
+	color:#1A1A1A;
+	margin-bottom:10px;
+}
+
+.card-text p{
+	color:#1A1A1A;
+	Line-height: 1.4;
+	font-size: 15px;
+}
+
+@media screen and (max-width:768px){
+	.container{
+		flex-direction: column;
+	}
+	.card{
+		width:80%;
+		margin:20px auto;
+	}
+}
+/*card-final*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #bcc1cf;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #333;
+	padding: 20px;
+	color: white;
+}
+
+.logo img {
+	max-width: 50px;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.card-img-top{
+	border:black;
+    max-width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+.one {
+    background-color: grey;
+    text-align: center;
+
+}
+.one h1, h3{
+    padding-right: 20%;
+}
+
+.two{
+    background-color: grey;
+    text-align: center;
+
+
+}
+.img1 {
+    display: flex;
+    width: 15%;
+    padding-right: 80%;
+}
+.img2 {
+    display: flex;
+    width: 15%;
+    
